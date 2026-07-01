@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Brand – Premium Footwear</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Syne:wght@700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <div class="bg_orbs">
+    <div class="orb orb1"></div>
+    <div class="orb orb2"></div>
+    <div class="orb orb3"></div>
+  </div>
+
+  <div class="main">
+
+    <nav class="nav_bar">
+      <div class="logo">Brand</div>
+      <div class="nav_links">
+        <a class="nav_ele" href="#">Home</a>
+        <a class="nav_ele" href="#">Shoes</a>
+        <a class="nav_ele" href="#">Contact</a>
+        <a class="nav_ele active" href="#">Cart <span class="badge">0</span></a>
+      </div>
+    </nav>
+
+    <div class="sections">
+
+      <!-- Sidebar Filters -->
+      <aside class="section_1">
+        <p class="filter_label">Filters</p>
+
+        <div class="drop_down_price filter_group">
+          <button class="filter_btn" id="price_btn">
+            Price Range
+            <span class="arrow">▾</span>
+          </button>
+          <div class="price_list filter_list" id="price_list">
+            <div class="filter_item">₹1000 - ₹5000</div>
+            <div class="filter_item">₹5000 - ₹7000</div>
+            <div class="filter_item">₹7000 - ₹10,000</div>
+            <div class="filter_item">₹10,000 - ₹15,000</div>
+            <div class="filter_item">Above ₹15,000</div>
+          </div>
+        </div>
+
+        <div class="drop_down_color filter_group">
+          <button class="filter_btn" id="color_btn">
+            Color
+            <span class="arrow">▾</span>
+          </button>
+          <div class="color_list filter_list" id="color_list">
+            <div class="filter_item"><span class="color_dot" style="background:#fff;border:1px solid #555"></span>White
+            </div>
+            <div class="filter_item"><span class="color_dot" style="background:#111"></span>Black</div>
+            <div class="filter_item"><span class="color_dot" style="background:#3b82f6"></span>Blue</div>
+            <div class="filter_item"><span class="color_dot" style="background:#ef4444"></span>Red</div>
+            <div class="filter_item"><span class="color_dot" style="background:yellow"></span>Yellow</div>
+            <div class="filter_item"><span class="color_dot" style="background:purple"></span>Purple</div>
+            <div class="filter_item"><span class="color_dot" style="background:grey"></span>Grey</div>
+            <div class="filter_item"><span class="color_dot" style="background:teal"></span>Teal</div>
+            <div class="filter_item"><span class="color_dot" style="background:navy"></span>Navy</div>
+            <div class="filter_item"><span class="color_dot" style="background:brown"></span>Brown</div>
+          </div>
+        </div>
+
+        <div class="drop_down_com filter_group">
+          <button class="filter_btn" id="com_btn">
+            Brand
+            <span class="arrow">▾</span>
+          </button>
+          <div class="com_list filter_list" id="com_list">
+            <div class="filter_item">Nike</div>
+            <div class="filter_item">Puma</div>
+            <div class="filter_item">Sparx</div>
+            <div class="filter_item">Jordan</div>
+            <div class="filter_item">Vans</div>
+            <div class="filter_item">Asics</div>
+            <div class="filter_item">Skechers</div>
+            <div class="filter_item">Converse</div>
+            <div class="filter_item">On Running</div>
+            <div class="filter_item">HOKA</div>
+            <div class="filter_item">New Balance</div>
+            <div class="filter_item">Adidas</div>
+            <div class="filter_item">Brooks</div>
+            <div class="filter_item">Reebok</div>
+          </div>
+        </div>
+
+        <button class="clear_btn">Clear Filters</button>
+      </aside>
+
+      <!-- Main Content -->
+      <div class="section_2">
+        <div class="section2_header">
+          <h1 class="section_title">All Shoes <span class="count">0</span></h1>
+          <select class="sort_select">
+            <option value="featured">Sort: Featured</option>
+            <option value="low">Price: Low to High</option>
+            <option value="high">Price: High to Low</option>
+          </select>
+        </div>
+
+        <div class="product_grid">
+          <!-- Placeholder cards -->
+          <div class="product_card">
+            <div class="product_img">
+              <img class="product_img_el">
+            </div>
+            <div class="product_info">
+              <span class="product_brand"></span>
+              <p class="product_name"></p>
+              <p class="product_price"></p>
+            </div>
+            <button class="add_btn">Add to Cart</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+  </div>
+
+  <script src="script.js" type="module"></script>
+</body>
+
+</html>
